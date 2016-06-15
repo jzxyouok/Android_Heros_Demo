@@ -15,4 +15,6 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:text="SecondCusView"/>
+    <include layout="@layout/topbar"/>
+
 </LinearLayout>

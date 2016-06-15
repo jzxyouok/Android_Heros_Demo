@@ -116,15 +116,15 @@ public class CombounView extends RelativeLayout{
     public void setButtonVisable(int id , boolean flag){
         if (flag){
             if (id == 0){
-                mLeftButton.setVisibility(VISIBLE);
+                mLeftButton.setVisibility(View.VISIBLE);
             }else {
-                mRightButton.setVisibility(VISIBLE);
+                mRightButton.setVisibility(View.VISIBLE);
             }
         }else {
             if (id == 0){
-                mLeftButton.setVisibility(GONE);
+                mLeftButton.setVisibility(View.GONE);
             }else {
-                mRightButton.setVisibility(GONE);
+                mRightButton.setVisibility(View.GONE);
             }
         }
     }

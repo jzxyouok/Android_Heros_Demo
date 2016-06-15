@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simple_demo.CombounView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:customer = "http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+
+    customer:leftBackground1 = "@drawable/blue_button"
+    customer:leftText1 = "Back"
+    customer:leftTextColor1 = "#FFFFFF"
+
+    customer:rightBackground1 = "@drawable/blue_button"
+    customer:rightText1 = "More"
+    customer:rightTextColor1 = "#FFFFFF"
+
+    customer:title1 = "customerTitle"
+    customer:titleTextSize1 = "15sp"
+    customer:titleTextColor1 = "#123412"
+
+
+
+    />
