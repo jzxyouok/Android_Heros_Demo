@@ -1,5 +1,6 @@
 package com.eaglei.android_heros_demo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -20,7 +21,8 @@ public class SecondActivity extends AppCompatActivity {
 
             @Override
             public void rightClick() {
-
+                Intent intent = new Intent(SecondActivity.this,ThirdActivity.class);
+                startActivity(intent);
             }
         });
     }

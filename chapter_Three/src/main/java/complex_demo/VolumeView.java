@@ -20,16 +20,20 @@ public class VolumeView extends View{
     private int mRectCount;
     private int offset = 5;
     private double mRandom;
-    private LinearGradient mLineargradient;
+    private LinearGradient mLinearGradient;
+
     public VolumeView(Context context) {
-        this(context, null);
+        super(context);
+        initView();
     }
 
     public VolumeView(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
+        initView();
     }
 
-    public VolumeView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public VolumeView(Context context, AttributeSet attrs,
+                      int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView();
     }
@@ -38,7 +42,7 @@ public class VolumeView extends View{
         mPaint = new Paint();
         mPaint.setColor(Color.BLUE);
         mPaint.setStyle(Paint.Style.FILL);
-        mRectCount = 12 ;
+        mRectCount = 12;
     }
 
     @Override
@@ -47,18 +51,25 @@ public class VolumeView extends View{
         mWidth = getWidth();
         mRectHeight = getHeight();
         mRectWidth = (int) (mWidth * 0.6 / mRectCount);
-        mLineargradient = new LinearGradient(0,0,mRectWidth,mRectHeight,Color.YELLOW,Color.BLUE, Shader
-                .TileMode.CLAMP);
-        mPaint.setShader(mLineargradient);
+        mLinearGradient = new LinearGradient(
+                0,
+                0,
+                mRectWidth,
+                mRectHeight,
+                Color.YELLOW,
+                Color.BLUE,
+                Shader.TileMode.CLAMP);
+        mPaint.setShader(mLinearGradient);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        for (int i = 0;i < mRectCount ; i++){
+        for (int i = 0; i < mRectCount; i++) {
             mRandom = Math.random();
             float currentHeight = (float) (mRectHeight * mRandom);
-            canvas.drawRect((float) (mWidth * 0.4 / 2 + mRectWidth * i + offset),
+            canvas.drawRect(
+                    (float) (mWidth * 0.4 / 2 + mRectWidth * i + offset),
                     currentHeight,
                     (float) (mWidth * 0.4 / 2 + mRectWidth * (i + 1)),
                     mRectHeight,

@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.eaglei.android_heros_demo.SecondActivity">
     <include layout="@layout/topbar"/>
 <complex_demo.VolumeView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="400dp"/>
 </LinearLayout>
