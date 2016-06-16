@@ -1,1 +1,1 @@
-include ':chapter_Three', ':chapter_four', ':chapter_four2', ':four', ':myapplication', ':myapplication2'
+include ':chapter_Three', ':chapter_four', ':chapter_four2', ':four', ':myapplication', ':myapplication2', ':gittest'
