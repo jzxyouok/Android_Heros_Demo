@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.eaglei.android_heros_demo.SmoothListviewActi">
+    tools:context="com.eaglei.android_heros_demo.SmoothListviewActi"
+    android:orientation="vertical">
+    <include layout="@layout/topbar"/>
 <chapter_four.SmoothListview
     android:id="@+id/slv"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
-</RelativeLayout>
+    android:layout_height="match_parent"
+    />
+</LinearLayout>

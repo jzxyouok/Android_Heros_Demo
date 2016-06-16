@@ -9,18 +9,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
         </activity>
         <activity android:name=".SecondActivity">
         </activity>
         <activity android:name=".ThirdActivity">
         </activity>
         <activity android:name=".SmoothListviewActi">
+        </activity>
+        <activity android:name=".BaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".HideShow_AutoAct"
+            android:label="@string/title_activity_hide_show__auto"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

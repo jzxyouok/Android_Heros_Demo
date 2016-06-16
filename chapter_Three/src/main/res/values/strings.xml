@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android_Heros_Demo</string>
+    <string name="title_activity_hide_show__auto">HideShow_AutoAct</string>
 </resources>
