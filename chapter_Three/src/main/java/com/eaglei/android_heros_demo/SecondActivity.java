@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import java.net.HttpURLConnection;
-
-import simple_demo.CombounView;
+import chapter_three.simple_demo.CombounView;
 
 public class SecondActivity extends AppCompatActivity {
     CombounView combounView;

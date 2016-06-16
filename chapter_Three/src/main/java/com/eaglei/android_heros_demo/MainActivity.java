@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import simple_demo.CombounView;
+import chapter_three.simple_demo.CombounView;
 
 public class MainActivity extends AppCompatActivity {
     CombounView combounView;

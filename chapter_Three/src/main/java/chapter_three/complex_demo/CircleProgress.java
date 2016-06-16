@@ -1,4 +1,4 @@
-package complex_demo;
+package chapter_three.complex_demo;
 
 import android.content.Context;
 import android.graphics.Canvas;

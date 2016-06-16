@@ -1,4 +1,4 @@
-package simple_demo;
+package chapter_three.simple_demo;
 
 import android.content.Context;
 import android.content.res.TypedArray;

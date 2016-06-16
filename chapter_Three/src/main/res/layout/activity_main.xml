@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.eaglei.android_heros_demo.MainActivity">
+    tools:context=".MainActivity">
 
-    <simple_demo.CusTextView
+    <chapter_three.simple_demo.CusTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FirstCustomView"/>
-    <simple_demo.SecondCustomeView
+    <chapter_three.simple_demo.SecondCustomeView
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:text="SecondCusView"/>
     <include layout="@layout/topbar"/>
-    <complex_demo.CircleProgress
+    <chapter_three.complex_demo.CircleProgress
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

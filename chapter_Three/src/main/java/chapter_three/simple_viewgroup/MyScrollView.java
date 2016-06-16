@@ -1,4 +1,4 @@
-package simple_viewgroup;
+package chapter_three.simple_viewgroup;
 
 import android.content.Context;
 import android.util.AttributeSet;

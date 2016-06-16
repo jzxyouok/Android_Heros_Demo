@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.eaglei.android_heros_demo.ThirdActivity">
-<simple_viewgroup.MyScrollView
+    tools:context=".ThirdActivity">
+<chapter_three.simple_viewgroup.MyScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
@@ -31,5 +31,5 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/test4" />
-</simple_viewgroup.MyScrollView>
+</chapter_three.simple_viewgroup.MyScrollView>
 </LinearLayout>
