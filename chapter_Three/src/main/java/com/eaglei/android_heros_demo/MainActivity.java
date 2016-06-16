@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntent);
             }
         });
-        combounView.setButtonVisable(0,false);
+        combounView.setButtonVisable(1,false);
 
     }
 }
