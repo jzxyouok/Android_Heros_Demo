@@ -1,12 +1,14 @@
 package com.eaglei.android_heros_demo;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -92,6 +94,13 @@ public class HideShow_AutoAct extends AppCompatActivity {
                 android.R.layout.simple_expandable_list_item_1,
                 mData));
         mListview.setOnTouchListener(mListener);
+        mListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(HideShow_AutoAct.this , ChatItemListActTest.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
