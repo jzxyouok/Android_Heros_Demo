@@ -46,6 +46,8 @@ public class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case 2:
+                intent = new Intent(BaseActivity.this,ScrollActi.class);
+                startActivity(intent);
                 break;
             case 3:
                 break;

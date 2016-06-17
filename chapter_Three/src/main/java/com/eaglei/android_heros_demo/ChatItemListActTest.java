@@ -8,14 +8,14 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import chapter_four.ChatItemAdapter;
 import chapter_four.ChatItemListViewBean;
-import chapter_four.ChatViewAdapter;
 
 public class ChatItemListActTest extends AppCompatActivity {
 
     private List<ChatItemListViewBean> mData = new ArrayList<>();
     private ListView mListView;
-    private ChatViewAdapter mAdapter;
+    private ChatItemAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class ChatItemListActTest extends AppCompatActivity {
 
     private void initView() {
         mListView = (ListView) findViewById(R.id.chat_listview);
-        mAdapter = new ChatViewAdapter(mData , ChatItemListActTest.this);
+        mAdapter = new ChatItemAdapter(mData , ChatItemListActTest.this);
         mListView.setAdapter(mAdapter);
     }
 

@@ -30,6 +30,8 @@
         </activity>
         <activity android:name=".ChatItemListActTest">
         </activity>
+        <activity android:name=".ScrollActi">
+        </activity>
     </application>
 
 </manifest>
