@@ -32,6 +32,8 @@
         </activity>
         <activity android:name=".ScrollActi">
         </activity>
+        <activity android:name=".ScrollViewGroupActi">
+        </activity>
     </application>
 
 </manifest>
