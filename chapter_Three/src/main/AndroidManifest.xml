@@ -34,6 +34,8 @@
         </activity>
         <activity android:name=".ScrollViewGroupActi">
         </activity>
+        <activity android:name=".Primary_ColorActi">
+        </activity>
     </application>
 
 </manifest>

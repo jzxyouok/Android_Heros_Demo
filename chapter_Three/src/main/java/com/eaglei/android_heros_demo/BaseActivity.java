@@ -50,6 +50,8 @@ public class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case 3:
+                intent = new Intent(BaseActivity.this , Primary_ColorActi.class);
+                startActivity(intent);
                 break;
             case 4:
                 break;
