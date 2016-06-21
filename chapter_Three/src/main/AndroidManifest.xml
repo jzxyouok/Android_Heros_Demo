@@ -38,6 +38,8 @@
         </activity>
         <activity android:name=".ColorMatrixActi">
         </activity>
+        <activity android:name=".FlagMeshActi">
+        </activity>
     </application>
 
 </manifest>

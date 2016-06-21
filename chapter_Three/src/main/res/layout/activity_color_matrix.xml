@@ -35,4 +35,24 @@
             android:onClick="btnReset"
             android:text="Reset"/>
     </LinearLayout>
+    <Button
+        android:id="@+id/btn_negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底片效果"/>
+    <Button
+        android:id="@+id/btn_oldphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="老照片效果"/>
+    <Button
+        android:id="@+id/btn_fudiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浮雕效果"/>
+    <Button
+        android:id="@+id/btn_Mesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浮雕效果"/>
 </LinearLayout>

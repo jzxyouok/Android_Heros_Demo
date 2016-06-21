@@ -12,7 +12,7 @@ import android.graphics.Paint;
  */
 public class ImageHelper {
     public static Bitmap handleImageEffect(Bitmap bm , float hue , float saturation , float lum){
-        Bitmap bmp = Bitmap.createBitmap(bm.getWidth() , bm.getHeight() , Bitmap.Config.ARGB_8888);
+        Bitmap bmp = Bitmap.createBitmap(bm.getWidth(), bm.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bmp);
         Paint paint = new Paint();
 
@@ -33,7 +33,7 @@ public class ImageHelper {
         imageMatrix.postConcat(lumMatrix);
 
         paint.setColorFilter(new ColorMatrixColorFilter(imageMatrix));
-        canvas.drawBitmap(bm , 0 , 0 ,paint);
+        canvas.drawBitmap(bm, 0, 0, paint);
         return bmp;
     }
 
@@ -127,7 +127,7 @@ public class ImageHelper {
         int [] newPx = new int[width * height];
 
         bm.getPixels(oldPx , 0 , bm.getWidth() , 0 , 0 ,width ,height);
-        for (int i = 1 ; i >width * height ; i++){
+        for (int i = 1 ; i < width * height ; i++){
             colorBefore = oldPx[i - 1];
             a = Color.alpha(colorBefore);
             r = Color.red(colorBefore);
@@ -139,9 +139,9 @@ public class ImageHelper {
             g1 = Color.green(color);
             b1 = Color.blue(color);
 
-            r = (r - r1 + 127);
-            g = (g - g1 + 127);
-            b = (b - b1 + 127);
+            r = (r - r1 + 110);
+            g = (g - g1 + 110);
+            b = (b - b1 + 110);
             if (r > 255) {
                 r = 255;
             }
