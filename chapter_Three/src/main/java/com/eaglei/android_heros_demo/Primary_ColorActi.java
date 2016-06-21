@@ -1,9 +1,12 @@
 package com.eaglei.android_heros_demo;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 
@@ -16,6 +19,7 @@ public class Primary_ColorActi extends AppCompatActivity implements SeekBar.OnSe
     private SeekBar mSeekbarhue, mSeekbarSaturation , mSeekbarLum;
     private float mHue , mSaturation , mLum;
     private Bitmap mBitmap;
+    private Button mButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,15 @@ public class Primary_ColorActi extends AppCompatActivity implements SeekBar.OnSe
         mSeekbarSaturation.setProgress(MIN_VALUE);
         mSeekbarLum.setProgress(MIN_VALUE);
         mImageView.setImageBitmap(mBitmap);
+        mButton = (Button) findViewById(R.id.btn_colorMatrix);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Primary_ColorActi.this , ColorMatrixActi.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override

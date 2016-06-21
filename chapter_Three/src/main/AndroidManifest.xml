@@ -36,6 +36,8 @@
         </activity>
         <activity android:name=".Primary_ColorActi">
         </activity>
+        <activity android:name=".ColorMatrixActi">
+        </activity>
     </application>
 
 </manifest>
