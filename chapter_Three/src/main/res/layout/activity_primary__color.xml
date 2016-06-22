@@ -35,4 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/seekbatLum"/>
+    <Button
+        android:id="@+id/btn_surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_colorMatrix"/>
 </RelativeLayout>

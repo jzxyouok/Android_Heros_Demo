@@ -20,6 +20,7 @@ public class Primary_ColorActi extends AppCompatActivity implements SeekBar.OnSe
     private float mHue , mSaturation , mLum;
     private Bitmap mBitmap;
     private Button mButton;
+    private Button mSurfaceButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,14 @@ public class Primary_ColorActi extends AppCompatActivity implements SeekBar.OnSe
                 Intent intent = new Intent(Primary_ColorActi.this , ColorMatrixActi.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        mSurfaceButton = (Button) findViewById(R.id.btn_surface);
+        mSurfaceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Primary_ColorActi.this,SurfaceViewTestAct1.class);
+                startActivity(i);
             }
         });
     }
