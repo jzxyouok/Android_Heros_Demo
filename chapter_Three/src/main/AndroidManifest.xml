@@ -42,6 +42,8 @@
         </activity>
         <activity android:name=".SurfaceViewTestAct1">
         </activity>
+        <activity android:name=".PropertyAniActi">
+        </activity>
     </application>
 
 </manifest>

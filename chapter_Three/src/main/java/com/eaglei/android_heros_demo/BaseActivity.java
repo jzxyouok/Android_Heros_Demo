@@ -54,6 +54,8 @@ public class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case 4:
+                intent = new Intent(BaseActivity.this , PropertyAniActi.class);
+                startActivity(intent);
                 break;
             case 5:
                 break;
